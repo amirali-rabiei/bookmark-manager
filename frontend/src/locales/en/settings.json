@@ -1,0 +1,16 @@
+{
+    "title": "settings",
+    "text": "Manage your app preferences",
+    "general-title": "General Settings",
+    "default-category": "Default category",
+    "auto-fetch": "Auto-fetch website data",
+    "appearance": "Appearance",
+    "dark-mode": "Dark Mode",
+    "language": "Language",
+    "bookmark-management": "Bookmark Management",
+    "import-bookmarks": "Import Bookmarks",
+    "clear-all-bookmarks": "Clear all bookmarks",
+    "clear-all": "Clear all",
+    "export-data": "Export data",
+    "import": "Import"
+}

@@ -1,0 +1,16 @@
+{
+    "title": "تنظیمات",
+    "text": "تنظیم ترجیحات برنامه",
+    "general-title": "تنظیمات عمومی",
+    "default-category": "دسته‌بندی پیش‌فرض",
+    "auto-fetch": "دریافت خودکار اطلاعات وب‌سایت",
+    "appearance": "ظاهر",
+    "dark-mode": "حالت تاریک",
+    "language": "زبان",
+    "bookmark-management": "مدیریت نشانک‌ها",
+    "import-bookmarks": "وارد کردن نشانک‌ها",
+    "clear-all-bookmarks": "حذف تمام نشانک‌ها",
+    "clear-all": "حذف همه",
+    "export-data": "خروجی گرفتن از داده‌ها",
+    "import": "وارد کردن"
+}

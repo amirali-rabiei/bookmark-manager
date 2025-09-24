@@ -1,0 +1,10 @@
+{
+    "title": "Add New Bookmark",
+    "text": "Save a new bookmark to your collection",
+    "url": "URL",
+    "name": "Name",
+    "description": "description",
+    "logo": "Logo",
+    "category": "Category",
+    "add": "Add bookmark"
+}
