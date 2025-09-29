@@ -8,7 +8,7 @@ const isLoading = ref(false)
 onMounted(async () => {
     try {
 
-        await axios.post('http://localhost:3000/getFrequentBookmarks', {}, {
+        await axios.post('https://bookmark-manager-ndqv.vercel.app/getFrequentBookmarks', {}, {
             withCredentials: true
         })
             .then((result) => {

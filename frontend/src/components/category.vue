@@ -47,7 +47,7 @@ onMounted(async () => {
 
     try {
 
-        const result = await axios.post('http://localhost:3000/findCategoryByName', { categoryName }, {
+        const result = await axios.post('https://bookmark-manager-ndqv.vercel.app/findCategoryByName', { categoryName }, {
             withCredentials: true
         })
 

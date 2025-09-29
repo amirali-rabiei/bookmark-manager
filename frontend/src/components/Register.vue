@@ -19,7 +19,7 @@ const RegisterHandler = async () => {
             password: password.value
         }
 
-        await axios.post('https://bookmark-manager-dusky-six.vercel.app//register', Payload)
+        await axios.post('https://bookmark-manager-dusky-six.vercel.app/register', Payload)
             .then((result) => {
                 if (result.status === 200) {
                     return router.push('/login')

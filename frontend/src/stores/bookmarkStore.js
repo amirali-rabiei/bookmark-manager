@@ -9,7 +9,7 @@ export const useBookmarkStore = defineStore('bookmarks', {
     actions: {
         async fetchBookmarks() {
             try {
-                const response = await axios.post('http://localhost:3000/fetchBookmarks', {}, {
+                const response = await axios.post('https://bookmark-manager-ndqv.vercel.app/fetchBookmarks', {}, {
                     withCredentials: true
                 })
 

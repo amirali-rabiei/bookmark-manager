@@ -10,7 +10,7 @@ const searchCategories = ref([])
 onMounted(async () => {
     try {
 
-        await axios.post('http://localhost:3000/fetchCateGories', {}, {
+        await axios.post('https://bookmark-manager-ndqv.vercel.app/fetchCateGories', {}, {
             withCredentials: true
         })
             .then((result) => {

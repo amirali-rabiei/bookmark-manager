@@ -90,7 +90,7 @@ const reminderDate = ref('')
 const reminderDateHandler = async () => {
     try {
 
-        const r = await axios.post('http://localhost:3000/addReminder', {reminderDate: reminderDate.value} , {
+        const r = await axios.post('https://bookmark-manager-ndqv.vercel.app/addReminder', {reminderDate: reminderDate.value} , {
             withCredentials: true
         })
         console.log(r.data)

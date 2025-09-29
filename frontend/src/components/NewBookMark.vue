@@ -22,7 +22,7 @@ const autoFetchData = async (e) => {
 
     try {
 
-        await axios.post('http://localhost:3000/fetchData', { url }, {
+        await axios.post('https://bookmark-manager-ndqv.vercel.app/fetchData', { url }, {
             withCredentials: true
         })
             .then((result) => {

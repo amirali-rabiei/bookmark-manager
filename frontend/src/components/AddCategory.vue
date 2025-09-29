@@ -16,7 +16,7 @@ const AddCategoryHandler = async () => {
             cateGoryIcon: IconId.value
         }
 
-        await axios.post('http://localhost:3000/cateGoryController', Payload, {
+        await axios.post('https://bookmark-manager-ndqv.vercel.app/cateGoryController', Payload, {
             withCredentials: true
         })
             .then((result) => {

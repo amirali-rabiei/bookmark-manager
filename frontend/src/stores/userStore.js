@@ -12,7 +12,7 @@ export const useUser = defineStore('user', {
         async fetchUserInfo() {
             try {
 
-                await axios.post('http://localhost:3000/me', {}, {
+                await axios.post('https://bookmark-manager-ndqv.vercel.app/me', {}, {
                     withCredentials: true
                 })
                     .then((result) => {
@@ -23,11 +23,11 @@ export const useUser = defineStore('user', {
                     .catch(async (error) => {
                         if (error.response?.status === 401) {
                             try {
-                                await axios.post('http://localhost:3000/refresh-token', {}, {
+                                await axios.post('https://bookmark-manager-ndqv.vercel.app/refresh-token', {}, {
                                     withCredentials: true
                                 })
 
-                                await axios.post('http://localhost:3000/me', {}, {
+                                await axios.post('https://bookmark-manager-ndqv.vercel.app/me', {}, {
                                     withCredentials: true
                                 })
                                 this.isAuth = true
