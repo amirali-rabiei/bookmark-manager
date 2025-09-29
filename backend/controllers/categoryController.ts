@@ -56,8 +56,8 @@ export const fetchCateGories = async (req: Request, res: Response) => {
             }
         })
 
-        const merged = categories.map((category) => {
-            const bookmarkCount = bookmarks.find(bookmark => bookmark.categoryId === category.id)?._count.categoryId || 0
+        const merged = categories.map((category: any) => {
+            const bookmarkCount = bookmarks.find((bookmark: any) => bookmark.categoryId === category.id)?._count.categoryId || 0
 
             return {
                 ...category,
