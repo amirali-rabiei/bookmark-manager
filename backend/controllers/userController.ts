@@ -51,6 +51,7 @@ export const me = async (req: Request, res: Response) => {
 export const register = async (req: Request, res: Response) => {
 
     const { username, email, password }: registerInput = req.body
+    console.log(username)
     const hashedPassword = await bcrypt.hash(password, 10)
 
     try {
