@@ -3,12 +3,12 @@ import { setupServer } from "./prisma"
 import router from "./routes"
 import { useMiddleware } from "./middleware/index"
 import { connectRedis } from "./config/redisClient"
-import { notifier } from "./crons"
+// import { notifier } from "./crons"
 
 
 const app = express()
 
-notifier()
+// notifier()
 useMiddleware(app)
 connectRedis()
 app.use('/', router)
