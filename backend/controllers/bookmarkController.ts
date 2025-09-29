@@ -338,7 +338,7 @@ export const importBookmark = async (req: Request, res: Response): Promise<Respo
             }
         })
 
-        const categoryMap = new Map(existsCategory.map((cat) => [cat.categoryName, cat.id]))
+        const categoryMap = new Map(existsCategory.map((cat: any) => [cat.categoryName, cat.id]))
 
         const newCategoryNames = categoriesNames.filter(name => !categoryMap.has(name))
 
