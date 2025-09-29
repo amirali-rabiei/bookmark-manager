@@ -109,12 +109,12 @@ export const login = async (req: Request, res: Response) => {
         res.cookie('auth', accessToken, {
             httpOnly: true,
             secure: true,
-            sameSite: 'strict'
+            sameSite: 'none'
         })
         res.cookie('refreshToken', refreshToken, {
             httpOnly: true,
             secure: true,
-            sameSite: 'strict'
+            sameSite: 'none'
         })
 
         console.log(refreshToken)
